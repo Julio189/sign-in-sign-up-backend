@@ -1,7 +1,7 @@
 import { User } from '../../../../entities/User'
 import { AppError } from '../../../../shared/errors/app-errors'
 import { PasswordCrypto } from '../../../../shared/services/password-crypto'
-import { ISignUpRepository } from '../repositories/sign-up-repository'
+import { ISignUpRepository } from '../../repositories/sign-up-repository'
 import { ISignUpDto } from './sign-up-dto'
 
 export class SignUpService {

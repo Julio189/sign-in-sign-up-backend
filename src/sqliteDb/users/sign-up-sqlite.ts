@@ -1,6 +1,6 @@
 import { prismaClient } from '../../database/client'
 import { User } from '../../entities/User'
-import { ISignUpRepository } from '../../modules/users/signUp/repositories/sign-up-repository'
+import { ISignUpRepository } from '../../modules/users/repositories/sign-up-repository'
 
 export class SignUpSqlite implements ISignUpRepository {
   async findByEmail(email: string): Promise<User | null> {
