@@ -12,8 +12,8 @@ export class SignInController {
     const { email, password } = request.body
 
     try {
-      await this.signInService.execute({ email, password })
-      return response.status(200).send('Login sucess!')
+      const acessToken = await this.signInService.execute({ email, password })
+      return response.status(200).send(acessToken)
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
       return response.status(error.statusCode).json({ error })

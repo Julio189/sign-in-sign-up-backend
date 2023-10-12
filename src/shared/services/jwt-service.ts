@@ -2,7 +2,7 @@ import * as jwt from 'jsonwebtoken'
 import 'dotenv/config'
 
 interface JwtData {
-  uid: number
+  uid: string
 }
 
 const jwtSecret = process.env.JWT_SECRET
