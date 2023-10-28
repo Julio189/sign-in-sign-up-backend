@@ -17,7 +17,7 @@ export class SignUpController {
         email,
         password,
       })
-      return response.status(201).send('User Created!')
+      return response.status(201).json('User Created!')
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
       return response.status(error.statusCode).json({ error })
